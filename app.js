@@ -11,10 +11,7 @@ var budgetController = (function() {
         this.value = value;
 
     }
-
-})()
-
-var data = {
+    var data = {
     allItems: {
         exp: [],
         inc: []
@@ -24,6 +21,10 @@ var data = {
         exp: 0
     }
 }
+
+})()
+
+
 
 var UIController = (function() {
 
