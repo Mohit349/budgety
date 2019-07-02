@@ -1,15 +1,29 @@
 var budgetController = (function() {
-    var x = 20;
-    var add = function(b) {
-        return x + b;
+    var Expense = function(id, description, value) {
+        this.id = id;
+        this.description = description;
+        this.value: value;
+
     }
-    return {
-        publicTest: function(c) {
-            return add(c)
-        }
+    var Income = function(id, description, value) {
+        this.id = id;
+        this.description;
+        this.value = value;
+
     }
 
 })()
+
+var data = {
+    allItems: {
+        exp: [],
+        inc: []
+    },
+    total: {
+        inc: 0,
+        exp: 0
+    }
+}
 
 var UIController = (function() {
 
@@ -61,13 +75,13 @@ var controller = (function(budgetCtrl, UICtrl) {
         //4.Calculate the budget.
 
         //5.Display the budget on the UI.
-        
+
     }
-    return{
-    	init:function(){
-    		console.log("Application has Started");
-    		setUpEventListeners();
-    	}
+    return {
+        init: function() {
+            console.log("Application has Started");
+            setUpEventListeners();
+        }
     }
 
 
